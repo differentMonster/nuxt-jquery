@@ -62,36 +62,11 @@
     export default {
         data() {
             return {
-                landingPoster_1: [],
-                landingPoster_2: [],
-                landingPoster_3: [],
                 slider_1: image_1,
                 slider_2: image_2,
                 slider_3: image_3,
             }
         },
-        async fetch() {
-            // const getLandingPage = await this.$axios.get('http://localhost:3080/wp-json/wp/v2/media?id=28').then((response) => {
-            //     this.landingPoster_1 = response.data[8].source_url
-            //     this.landingPoster_2 = response.data[7].source_url
-            //     this.landingPoster_3 = response.data[6].source_url
-            //     console.log(response.data)
-            //     console.log('Responese landing poster : get successful')
-            // }).catch((error) => {
-            //     console.log('Responese landing poster : get failure')
-            // })
-            // return {
-            //     getLandingPage
-            // }
-        },
-        methods: {
-            getLandingPageWonder() {
-                console.log("wonder")
-            }
-        },
-        mounted() {
-            this.getLandingPageWonder()
-        }
     }
 </script>
 
